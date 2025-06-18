@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tomato Timer</title>
-    <link rel="stylesheet" href="../styles/timer.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Marker+Hatch&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tomato Timer</title>
+  <link rel="stylesheet" href="../styles/timer.css" />
 
-  <body>
-    <div class="container">
-      <div id="clock" class="borderB">
-        <h1 id="Ttitle" class="rubik-marker-hatch-regular">TIMER</h1>
-        <h2 id="Ttime" class="rubik-marker-hatch-regular">0</h2>
-        <div id="containerButtons">
-          <button id="BStart" class="buttons rubik-marker-hatch-regular">
-            START
-          </button>
-          <button id="BReset" class="buttons rubik-marker-hatch-regular">
-            RESET
-          </button>
-        </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Marker+Hatch&display=swap"
+    rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div id="clock" class="borderB">
+      <h1 id="Ttitle" class="rubik-marker-hatch-regular">TIMER</h1>
+      <h2 id="Ttime" class="rubik-marker-hatch-regular">10</h2>
+      <div id="containerButtons">
+        <button id="BStart" class="buttons rubik-marker-hatch-regular">
+          START
+        </button>
+        <button id="BReset" class="buttons rubik-marker-hatch-regular">
+          RESET
+        </button>
+
       </div>
+      <button id="BPause" class="buttons rubik-marker-hatch-regular">PAUSE</button>
     </div>
-    <script src="../scripts/timer.js"></script>
-  </body>
+  </div>
+  </div>
+  <script src="../scripts/timer.js"></script>
+</body>
+
 </html>
