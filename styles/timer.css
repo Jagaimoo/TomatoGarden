@@ -9,18 +9,6 @@
 }
 
 
-/*.navbar {
-  position: absolute;
-  top: 20px;
-  width: 80%;
-  left:10%;
-  height:70px;
-  background-color: #806443;
-  color: white;
-  border-radius: 10px;
-  z-index: 9999;
-}*/
-
 #containerButtons {
   display: flex;
   width: 60%;

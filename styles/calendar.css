@@ -1,0 +1,38 @@
+
+
+
+#calendario {
+    width: 500px;
+    margin: auto;
+    font-family: sans-serif;
+    border:1px solid black;
+}
+
+.giorni-settimana,
+.griglia-giorni {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+}
+
+.giorni-settimana{
+    padding: 10px;
+
+}
+
+
+.giorno {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* centra orizzontalmente */
+    align-items: center;     /* centra verticalmente */
+  }

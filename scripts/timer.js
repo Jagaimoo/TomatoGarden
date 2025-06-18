@@ -48,6 +48,8 @@ $(document).ready(function () {
     $(".buttons").css("font-size", 15 + (WindWidth - 300) / 13);
     $(".buttons").css("border-width", 4 + (WindWidth - 300) / 80);
 
+    $(".Bnavbar").css("height", 70 + (WindWidth - 300) / 10);
+    $(".Bnavbar").css("width", 70 + (WindWidth - 300) / 10);
   }
 });
 /*per ingrandire le scritte al loading della pagina*/
@@ -61,12 +63,20 @@ $(window).resize(function () {
     $(".buttons").css("font-size", 15 + (WindWidth - 300) / 13);
     $(".buttons").css("border-width", 4 + (WindWidth - 300) / 80);
 
+    $(".Bnavbar").css("height", 70 + (WindWidth - 300) / 10);
+    $(".Bnavbar").css("width", 70 + (WindWidth - 300) / 10);
+
+
+
   } else {
     $("#Ttitle").css("font-size", 40);
     $("#Ttime").css("font-size", 50);
     $(".buttons").css("height", 30);
     $(".buttons").css("font-size", 15);
     $(".buttons").css("border-width", 4);
+
+    $(".Bnavbar").css("height", 70 );
+    $(".Bnavbar").css("width", 70 );
 
   }
 });

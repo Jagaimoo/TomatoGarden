@@ -1,0 +1,86 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../img/landscape.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#logo{
+    position: absolute;
+    top: 5%;
+    width: 35%;
+    left:10%;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-around;
+    background-color: #806443;
+    height:15%;
+}
+
+#calendar{
+    position: absolute;
+    top: 5%;
+    right:10%;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-around;
+    background-color: #806443;
+    height:25%;
+    width: 35%;
+
+}
+
+#garden{
+    position: absolute;
+    top: 25%;
+    left:10%;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-around;
+    background-color: #806443;
+    height:50%;
+    width: 40%;
+    
+}
+
+#timer{
+    position: absolute;
+    top: 35%;
+    right:10%;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-around;
+    background-color: #806443;
+    height:40%;
+    width: 35%;
+}
+
+
+#music{
+    position: absolute;
+    bottom: 5%;
+    width: 80%;
+    left:10%;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-around;
+    background-color: #806443;
+    height:15%;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+    border: 10px solid #806443;
+    border-radius:10px;
+}
+
+
+
