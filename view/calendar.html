@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/calendar.css">
+    <link rel="stylesheet" href="../styles/calendar.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Marker+Hatch&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="calendario">
-        <div class="intestazione">
-            <button id="prev">←</button>
-            <span id="mese"></span>
-            <button id="next">→</button>
-        </div>
-        <div class="giorni-settimana">
-            <div>Sun</div>
-            <div>Mon</div>
-            <div>Tue</div>
-            <div>Thu</div>
-            <div>Wed</div>
-            <div>Fri</div>
-            <div>Sat</div>
-        </div>
-        <div class="griglia-giorni" id="griglia"></div>
+      <div class="intestazione rubik-marker-hatch-regular">
+        <button id="prev" class="rubik-marker-hatch-regular">←</button>
+        <div id="month"></div>
+        <button id="next" class="rubik-marker-hatch-regular">→</button>
+
+      </div>
+      <div class="giorni-settimana rubik-marker-hatch-regular settimana" style="font-size: 20px;">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Thu</div>
+        <div>Wed</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+      <div class="griglia-giorni" id="griglia"></div>
     </div>
     <script src="../scripts/calendar.js"></script>
-</body>
-
+  </body>
 </html>

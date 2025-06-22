@@ -1,38 +1,63 @@
-
-
-
 #calendario {
-    width: 500px;
-    margin: auto;
-    font-family: sans-serif;
-    border:1px solid black;
+  width: 550px;
+  margin: auto;
+  font-family: sans-serif;
+  background-color: #a98541;
+  border: 9px solid #8b7242;
+  border-radius: 6px;
+  padding-bottom: 10px;
 }
 
 .giorni-settimana,
 .griglia-giorni {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 4px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 10px;
+  column-gap: 5px;
+  justify-content: center;
 }
 
-.giorni-settimana{
-    padding: 10px;
-
+.settimana {
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
 
 .giorno {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    border-radius: 6px;
+  border: 3px solid #856c3e;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  height: 35px;
+  width: 35px;
+  color: #432818;
+  margin: auto;
 }
 
-
 body {
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center; /* centra orizzontalmente */
-    align-items: center;     /* centra verticalmente */
-  }
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/landscape.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rubik-marker-hatch-regular {
+  font-family: "Rubik Marker Hatch", system-ui;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.intestazione {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  background-color: #8b7242;
+}
