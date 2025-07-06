@@ -22,9 +22,12 @@ body{
     justify-content: space-around;
     background-color: #806443;
     height:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#calendar{
+#tasks{
     position: absolute;
     top: 5%;
     right:10%;
@@ -62,17 +65,44 @@ body{
     width: 35%;
 }
 
-
 #music{
     position: absolute;
-    bottom: 5%;
+    bottom: 2%;
     width: 80%;
     left:10%;
     border-radius: 10px;
-    display:flex;
-    justify-content: space-around;
-    background-color: #806443;
+    border: 10px solid #806443;
+    background-color: #b98d59;
     height:15%;
+
+}
+.musicNP{
+    display: flex;
+    justify-content: center; /* centra orizzontalmente */
+    align-items: center; 
+}
+.musicP{
+    overflow-y: auto;
+    display: block; 
+}
+.musicP div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px; /* spazio tra testo e player */
+    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-right: 12%;
+}
+
+.audio-label {
+    flex: 0 0 50%; /* massimo 50% larghezza fissa */
+    word-break: break-word; /* va a capo se serve */    
+    font-weight: bold;
+}
+
+.audio-player {
+    flex: 1; /* il player prende lo spazio rimanente */
 }
 
 iframe{
@@ -82,5 +112,16 @@ iframe{
     border-radius:10px;
 }
 
+audio {
+    width: 300px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    padding: 5px;
+  }
 
-
+.rubik-marker-hatch-regular {
+  font-family: "Rubik Marker Hatch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
