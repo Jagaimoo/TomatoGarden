@@ -3,18 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href = "../styles/taskStyle.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/taskStyle.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Marker+Hatch&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tasks</title>
   </head>
   <body>
     <div id="taskContainer">
-      <h2>Lista Task</h2>
-      <div style="margin-bottom: 10px">
+      <h2 class="rubik-marker-hatch-regular etichetta">Lista Task</h2>
+      <div id="addContainer">
         <input type="text" id="taskInput" placeholder="Nuovo task..." />
         <button id="addTaskBtn">Aggiungi</button>
       </div>
+
       <div id="taskList"></div>
     </div>
-    <script src = "../scripts/taskScp.js"></script>
+    <script src="../scripts/taskScp.js"></script>
   </body>
 </html>

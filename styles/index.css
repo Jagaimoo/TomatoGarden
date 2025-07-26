@@ -1,125 +1,170 @@
-html{
-    height: 100%;
-    width: 100%;
-}
-body{
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url(../img/landscape.PNG);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
+/* ======== Base Layout ======== */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+              url(../img/landscape.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-#logo{
-    position: absolute;
-    top: 5%;
-    width: 35%;
-    left:10%;
-    border-radius: 10px;
-    display:flex;
-    justify-content: space-around;
-    background-color: #806443;
-    height:15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/* ======== Logo ======== */
+#logo {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  width: 35%;
+  height: 15%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  background: url(../img/logo.png) no-repeat center center;
+  background-size: contain;
+  filter: brightness(0.7);
 }
 
-#tasks{
-    position: absolute;
-    top: 5%;
-    right:10%;
-    border-radius: 10px;
-    display:flex;
-    justify-content: space-around;
-    background-color: #806443;
-    height:25%;
-    width: 35%;
 
-}
+/* ======== Task Section ======== */
+#tasks {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  width: 35%;
+  height: 25%;
 
-#garden{
-    position: absolute;
-    top: 25%;
-    left:10%;
-    border-radius: 10px;
-    display:flex;
-    justify-content: space-around;
-    background-color: #806443;
-    height:50%;
-    width: 40%;
-    
+  display: flex;
+  justify-content: space-around;
+
+  background-color: #806443;
+  border-radius: 10px;
 }
 
-#timer{
-    position: absolute;
-    top: 35%;
-    right:10%;
-    border-radius: 10px;
-    display:flex;
-    justify-content: space-around;
-    background-color: #806443;
-    height:40%;
-    width: 35%;
+
+/* ======== Garden Section ======== */
+#garden {
+  position: relative;
+  top: 25%;
+  left: 10%;
+  width: 40%;
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: #806443;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: visible;
 }
 
-#music{
-    position: absolute;
-    bottom: 2%;
-    width: 80%;
-    left:10%;
-    border-radius: 10px;
-    border: 10px solid #806443;
-    background-color: #b98d59;
-    height:15%;
 
+/* ======== Timer Section ======== */
+#timer {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  width: 35%;
+  height: 40%;
+
+  display: flex;
+  justify-content: space-around;
+
+  background-color: #806443;
+  border-radius: 10px;
 }
-.musicNP{
-    display: flex;
-    justify-content: center; /* centra orizzontalmente */
-    align-items: center; 
+
+
+/* ======== Music Section ======== */
+#music {
+  position: absolute;
+  bottom: 2%;
+  left: 10%;
+  width: 80%;
+  height: 15%;
+
+  background-color: #b98d59;
+  border: 10px solid #806443;
+  border-radius: 10px;
 }
-.musicP{
-    overflow-y: auto;
-    display: block; 
+
+
+/* ======== Music Styling ======== */
+.musicNP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.musicP div{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 10px; /* spazio tra testo e player */
-    margin-bottom: 10px;
-    margin-top: 15px;
-    margin-right: 12%;
+
+.musicP {
+  display: block;
+  overflow-y: auto;
+}
+
+.musicP div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 15px 12% 10px 0;
 }
 
 .audio-label {
-    flex: 0 0 50%; /* massimo 50% larghezza fissa */
-    word-break: break-word; /* va a capo se serve */    
-    font-weight: bold;
+  flex: 0 0 50%;
+  font-weight: bold;
+  word-break: break-word;
 }
 
 .audio-player {
-    flex: 1; /* il player prende lo spazio rimanente */
+  flex: 1;
 }
 
-iframe{
-    height: 100%;
-    width: 100%;
-    border: 10px solid #806443;
-    border-radius:10px;
+
+/* ======== Iframe & Audio ======== */
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 10px solid #806443;
+  border-radius: 10px;
 }
 
 audio {
-    width: 300px;
-    border: 2px solid #4CAF50;
-    border-radius: 10px;
-    background-color: #f0f0f0;
-    padding: 5px;
-  }
+  width: 300px;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+}
 
+
+/* ======== Etichette ======== */
+.label {
+  position: absolute;
+  top: -14px;
+  left: 20px;
+
+  padding: 6px 12px;
+  font-weight: bold;
+  color: #000;
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: saturate(0.8) blur(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Rubik Marker Hatch", sans-serif;
+  z-index: 1;
+}
+
+
+/* ======== Font Rubik Marker Hatch ======== */
 .rubik-marker-hatch-regular {
   font-family: "Rubik Marker Hatch", system-ui;
   font-weight: 400;
